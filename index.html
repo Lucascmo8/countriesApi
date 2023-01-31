@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/desktop.css">
+    <link rel="stylesheet" href="estilos/darkMode.css">
+    <title>Where in the world?</title>
+</head>
+<body>
+    <header id="headerMenu">
+        <h1>Where in the world?</h1>
+        <button id="btnDarkAndLightMode"><span></span>Dark Mode</button>
+    </header>
+    <main id="main">
+        <div id="search">
+            <div id="searchAndInput">
+                <label for="inputSearchCountry"><img src="icons/searchIcon.svg" alt="" id="testeLight"><img src="icons/searchIconDark.svg" alt="" id="testeDark"></label>
+                <input type="text" name="inputSearchCountry" id="inputSearchCountry" placeholder="Search for a country...">
+            </div>
+            <select name="SelectAboutRegion" id="SelectAboutRegion" >
+                <option value="">Filter by Region</option>
+                <option value="africa">Africa</option>
+                <option value="africa">America</option>
+                <option value="africa">Asia</option>
+                <option value="africa">Europe</option>
+                <option value="africa">Oceania</option>
+            </select>
+        </div>
+    </main>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>

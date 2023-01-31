@@ -1,0 +1,27 @@
+@media (min-width: 600px) {
+
+    header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    main{
+        margin-top: 80px;
+        padding: 0 40px 10px;
+    }
+
+    div#search{
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #searchAndInput{
+        flex-shrink: 1;
+        width: 475px;
+    }
+
+    div#search select{
+        width: 200px;
+    }
+}

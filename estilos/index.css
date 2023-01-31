@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #fffffd;
+}
+
+header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    
+
+    background-color: #ffffff;
+
+    position: fixed;
+    top: 0;
+
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+header h1{
+    font-weight: bold;
+}
+
+#btnDarkAndLightMode{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+#btnDarkAndLightMode span{
+    background: url(../icons/moonIcon.svg) no-repeat center /cover ;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+/* main{} */
+
+div#search{
+    display: flex;
+}
+
+#searchAndInput{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 12px;
+    height: 36px;
+    
+    border-radius: 5px;
+    box-shadow:1px 5px 3px rgba(0, 0, 0, 0.2) ;
+}
+
+#searchAndInput > label img#testeLight{
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+#searchAndInput > label img#testeDark{
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+
+#searchAndInput > input[type=text]{
+    flex-grow: 2;
+}
+
+#searchAndInput > input[type=text] ,select#SelectAboutRegion{
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+}
+
+select#SelectAboutRegion{
+    background-color: #ffffff;
+    color:#000;
+}
+
+#searchAndInput, select{
+    padding: 10px;
+    height: 36px;
+    
+    border-radius: 5px;
+    box-shadow:1px 5px 3px rgba(0, 0, 0, 0.2) ;
+}

@@ -1,0 +1,43 @@
+body.darkMode{
+    background-color:#202c37 ;
+}
+header.darkMode{
+    background-color:#2b3945;
+    color: #fff;
+}
+
+header.darkMode button{
+    color: #fff;
+}
+
+header.darkMode > #btnDarkAndLightMode span{
+    background: url(../icons/sunIcon.svg)  no-repeat center /cover ;
+}
+main.darkMode #searchAndInput{
+    background-color:#2b3945;
+    color: #fff;
+}
+main.darkMode #searchAndInput > input[type=text]{
+    background-color:#2b3945;
+    color: #fff;
+}
+
+main.darkMode #searchAndInput > input[type=text]::placeholder{
+    color: #ffffff;
+}
+
+main.darkMode select#SelectAboutRegion{
+    background-color:#2b3945;
+    color: #fff;
+}
+
+main.darkMode #searchAndInput > label img#testeDark{
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+main.darkMode #searchAndInput > label img#testeLight{
+    display: none;
+}
+
