@@ -19,9 +19,11 @@
     #searchAndInput{
         flex-shrink: 1;
         width: 475px;
+        height: 60px;
     }
 
     div#search select{
         width: 200px;
+        height: 60px;
     }
 }
