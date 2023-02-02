@@ -41,3 +41,9 @@ main.darkMode #searchAndInput > label img#testeLight{
     display: none;
 }
 
+
+
+section#countriesSection.darkMode div.countryCard{
+    background-color:#2b3945;
+    color: #fff;
+}
