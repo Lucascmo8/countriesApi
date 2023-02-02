@@ -1,11 +1,11 @@
 // import { countriesSection } from "./conectApi.js";
 import { countries } from "./conectApi.js"
 import { shownCardsWithCountries } from "./showCards.js"
-let options = document.querySelectorAll("[data-option]")
+// let options = document.querySelectorAll("[data-option]")
 let SelectAboutRegion = document.querySelector("#SelectAboutRegion")
 SelectAboutRegion.addEventListener("click",filterRegion)
 
-options.forEach(option=>option.addEventListener("click",filterRegion))
+SelectAboutRegion.addEventListener("blur",filterRegion)
 
 let regionSelected = ["all"]
 function filterRegion(){
