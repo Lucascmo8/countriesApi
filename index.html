@@ -21,13 +21,13 @@
                 <label for="inputSearchCountry"><img src="icons/searchIcon.svg" alt="" id="testeLight"><img src="icons/searchIconDark.svg" alt="" id="testeDark"></label>
                 <input type="text" name="inputSearchCountry" id="inputSearchCountry" placeholder="Search for a country...">
             </div>
-            <select name="SelectAboutRegion" id="SelectAboutRegion" >
-                <option value="">Filter by Region</option>
-                <option value="africa">Africa</option>
-                <option value="africa">America</option>
-                <option value="africa">Asia</option>
-                <option value="africa">Europe</option>
-                <option value="africa">Oceania</option>
+            <select name="SelectAboutRegion" id="SelectAboutRegion">
+                <option value="all">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
             </select>
         </div>
         <section id="countriesSection">
@@ -35,6 +35,8 @@
         </section>
     </main>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/conectApi.js"></script>
+    <script src="scripts/conectApi.js" type="module"></script>
+    <script src="scripts/searchWithSelect.js" type="module"></script>
+    <script src="scripts/showCards.js" type="module"></script>
 </body>
 </html>
