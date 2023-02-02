@@ -26,23 +26,18 @@
                     placeholder="Search for a country...">
             </div>
             <select name="SelectAboutRegion" id="SelectAboutRegion">
-                <option value="all" data-option>All</option>
-                <option value="Africa" data-option onclick="filterRegio()">Africa</option>
-                <option value="Americas" data-option onclick="filterRegio()">Americas</option>
-                <option value="Asia" data-option onclick="filterRegio()">Asia</option>
-                <option value="Europe" data-option onclick="filterRegio()">Europe</option>
-                <option value="Oceania" data-option onclick="filterRegio()">Oceania</option>
+                <option value="all">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
             </select>
         </div>
         <section id="countriesSection">
 
         </section>
     </main>
-    <script>
-        function filterRegio() {
-            alert(`olá`)
-        }
-    </script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/conectApi.js" type="module"></script>
     <script src="scripts/searchWithSelect.js" type="module"></script>
