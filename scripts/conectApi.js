@@ -12,8 +12,8 @@ async function teste(){
     console.log(contries.length)
     contries.forEach(country => lugarCerto.innerHTML += `
     <div class="countryCard">
-        <div class="CountryImg">
-            <img src="${country.flag}" alt="${country.name} flag">
+        <div class="CountryImg" id="${country.name}Flag">
+            <img src="${country.flag}" alt="${country.name} flag" id="${country.name}Flag">
         </div>
         <div class="countryText\">    
             <h2>${country.name}</h2>
