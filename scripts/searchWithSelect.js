@@ -12,7 +12,6 @@ function filterRegion(){
         regionSelected.push(SelectAboutRegion.value)
         showByRegion(regionSelected.join())
     }
-
 }
 
 
