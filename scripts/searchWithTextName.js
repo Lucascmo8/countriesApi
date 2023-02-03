@@ -17,82 +17,56 @@ function searchWithText(event){
 function filterWithText(){
     let found = []
     if(found.length == 0){
-        found = countries.filter(element => element.translations.br == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.br == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`1`)
     }
     if(found.length == 0){
-        found = countries.filter(element => element.translations.de == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.de == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`2`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.es == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.es == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`3`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.fa == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.fa == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`4`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.fr == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.fr == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`5`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.hr == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.hr == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`6`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.hu == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.hu == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`7`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.it == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.it == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`8`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.ja == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.ja == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`9`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.nl == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.nl == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`10`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.translations.pt == inputSearchCountry.value)
+        found = countries.filter(element => element.translations.pt == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`11`)
     }
      if(found.length == 0){
-        found = countries.filter(element => element.nativeName == inputSearchCountry.value)
+        found = countries.filter(element => element.nativeName == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`12`)
     }
     if(found.length == 0){
-        found = countries.filter(element => element.name == inputSearchCountry.value)
+        found = countries.filter(element => element.name == inputSearchCountry.value.trim())
         shownCardsWithCountries(found)
-        console.log(found)
-        console.log(`13`)
     }
     if(found.length == 0){
         countryNoFound()
