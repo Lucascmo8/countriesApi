@@ -10,6 +10,7 @@ conectApi(urlApi)
 async function conectApi(url){
     const res = await fetch(url)
     countries = await res.json()
+    console.log(countries)
     shownCardsWithCountries(countries)
 }
 

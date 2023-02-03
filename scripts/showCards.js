@@ -15,4 +15,4 @@ function shownCardsWithCountries(countries){
     </,div>`);
 }
 
-export {shownCardsWithCountries}
+export {shownCardsWithCountries,countriesSection}

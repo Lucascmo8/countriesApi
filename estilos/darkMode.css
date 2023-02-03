@@ -41,6 +41,9 @@ main.darkMode #searchAndInput > label img#testeLight{
     display: none;
 }
 
+main.darkMode h3{
+    color: #fff;
+}
 
 
 section#countriesSection.darkMode div.countryCard{
