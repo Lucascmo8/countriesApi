@@ -50,3 +50,7 @@ section#countriesSection.darkMode div.countryCard{
     background-color:#2b3945;
     color: #fff;
 }
+
+#articleDetails.darkMode, #articleDetails.darkMode button {
+    color: #fff;
+}

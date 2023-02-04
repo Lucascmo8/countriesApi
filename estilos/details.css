@@ -1,0 +1,22 @@
+article#articleDetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    gap: 80px;
+}
+
+/* Colocar um id ou classe nesse botão */
+article#articleDetails button{
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    width: 135px;
+}
+
+article#articleDetails #content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

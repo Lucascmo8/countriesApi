@@ -26,4 +26,54 @@
         width: 200px;
         height: 60px;
     }
+
+    article#articleDetails{
+        padding: 0 40px 10px;
+    }
+
+    article#articleDetails  #imagem{
+        width: 560px;
+        height: 400px;
+        box-sizing: border-box;
+    }
+
+    article#articleDetails  #flagDetails{
+        width: 560px;
+        height: 400px;
+    }
+
+    article#articleDetails #content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 120px;
+    }
+
+    article#articleDetails #allContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article#articleDetails #firstContent,article#articleDetails #secondContent{
+        width: 50%;
+    }
+
+    article#articleDetails #borderCountries{
+        width: 100%;
+        margin: auto;
+    }
+
+    article#articleDetails #firstContent h4{
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+
+    article#articleDetails p{
+        line-height: 30px;
+    }
+
+    article#articleDetails #secondContent{
+        padding: 60px 0px;
+    }
 }

@@ -1,4 +1,4 @@
-import { shownCardsWithCountries } from "./showCards.js"
+import {shownCardsWithCountries } from "./showCards.js"
 
 
 let countries = []

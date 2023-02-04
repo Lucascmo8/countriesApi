@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="estilos/mobile.css">
     <link rel="stylesheet" href="estilos/desktop.css">
     <link rel="stylesheet" href="estilos/darkMode.css">
+    <link rel="stylesheet" href="estilos/details.css">
     <title>Where in the world?</title>
 </head>
 
 <body>
     <header id="headerMenu">
-        <h1>Where in the world?</h1>
+        <h1 onclick="chamado()">Where in the world?</h1>
         <button id="btnDarkAndLightMode"><span></span>Dark Mode</button>
     </header>
     <main id="main">
         <div id="search">
             <div id="searchAndInput">
-                <button for="inputSearchCountry" id="btnSearch"><img src="icons/searchIcon.svg" alt="" id="testeLight"><img
-                        src="icons/searchIconDark.svg" alt="" id="testeDark"></button>
+                <button for="inputSearchCountry" id="btnSearch"><img src="icons/searchIcon.svg" alt=""
+                        id="testeLight"><img src="icons/searchIconDark.svg" alt="" id="testeDark"></button>
                 <input type="text" name="inputSearchCountry" id="inputSearchCountry"
                     placeholder="Search for a country...">
             </div>
@@ -38,11 +39,16 @@
 
         </section>
     </main>
-    <script src="scripts/darkMode.js"></script>
+    <article id="articleDetails">
+        
+    </article>
+
+    <script src="scripts/darkMode.js" type="module"></script>
     <script src="scripts/conectApi.js" type="module"></script>
     <script src="scripts/searchWithSelect.js" type="module"></script>
     <script src="scripts/searchWithTextName.js" type="module"></script>
     <script src="scripts/showCards.js" type="module"></script>
+    <script src="scripts/moreDetail.js" type="module"></script>
 </body>
 
 </html>
