@@ -5,18 +5,17 @@
     font-family: sans-serif;
 }
 
-body{
+body {
     background-color: #fffffd;
 }
 
 header {
     display: flex;
-    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     width: 100vw;
-    
+
 
     background-color: #ffffff;
 
@@ -26,11 +25,11 @@ header {
     box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-header h1{
+header h1 {
     font-weight: bold;
 }
 
-#btnDarkAndLightMode{
+#btnDarkAndLightMode {
     border: none;
     background-color: transparent;
     display: flex;
@@ -39,20 +38,22 @@ header h1{
     cursor: pointer;
 }
 
-#btnDarkAndLightMode span{
-    background: url(../icons/moonIcon.svg) no-repeat center /cover ;
+#btnDarkAndLightMode span {
+    background: url(../icons/moonIcon.svg) no-repeat center /cover;
     height: 16px;
     width: 16px;
     margin-right: 4px;
 }
 
-/* main */
-
-div#search{
+div#search {
     display: flex;
 }
 
-#searchAndInput{
+div#search select {
+    width: 200px;
+}
+
+#searchAndInput {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -60,12 +61,12 @@ div#search{
     background-color: #ffffff;
     padding: 12px;
     height: 36px;
-    
+
     border-radius: 5px;
-    box-shadow:1px 5px 3px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-#searchAndInput > button{
+#searchAndInput>button {
     height: 100%;
     display: flex;
     align-items: center;
@@ -74,45 +75,47 @@ div#search{
     background-color: transparent;
 }
 
-#searchAndInput > button img#testeLight{
+#searchAndInput>button img#testeLight {
     display: block;
     height: 16px;
     width: 16px;
 }
 
-#searchAndInput > button img#testeDark{
+#searchAndInput>button img#testeDark {
     display: none;
     height: 0px;
     width: 0px;
 }
 
-#searchAndInput > input[type=text]{
+#searchAndInput>input[type=text] {
     flex-grow: 2;
     height: 100%;
 }
 
-#searchAndInput > input[type=text] ,select#SelectAboutRegion{
+#searchAndInput>input[type=text],
+select#SelectAboutRegion {
     background-color: #ffffff;
     color: #000;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-select#SelectAboutRegion{
+select#SelectAboutRegion {
     background-color: #ffffff;
-    color:#000;
+    color: #000;
 }
 
-#searchAndInput, select{
+#searchAndInput,
+select {
     padding: 10px;
     height: 36px;
-    
+
     border-radius: 5px;
-    box-shadow:1px 5px 3px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Section div about countries */
-section#countriesSection{
+/* Section div with countries */
+section#countriesSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,30 +123,31 @@ section#countriesSection{
 
     margin-top: 45px;
 }
-section#section#countriesSection div.countryCard > div.CountryImg{
+
+section#section#countriesSection div.countryCard>div.CountryImg {
     height: 160px;
     width: 100%;
     box-sizing: border-box;
 }
 
-section img{
+section img {
     width: 100%;
     height: 160px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 8px 8px 0px 0px;
 }
 
-div.CountryImg#SwitzerlandFlag{
+div.CountryImg#SwitzerlandFlag {
     border-radius: 8px 8px 0px 0px;
     background-color: #ff0000;
 }
 
-img#SwitzerlandFlag{
+img#SwitzerlandFlag {
     object-fit: contain;
 }
 
-section#countriesSection div.countryCard{
-    height: 335px;
+section#countriesSection div.countryCard {
+    height: 350px;
     width: 265px;
     display: flex;
     flex-direction: column;
@@ -152,10 +156,9 @@ section#countriesSection div.countryCard{
     border-radius: 8px;
 
     box-sizing: border-box;
-    /* box-sizing: content-box; */
 }
 
-section#countriesSection div.countryCard > div.countryText{
+section#countriesSection div.countryCard>div.countryText {
     width: 100%;
     height: 100%;
     flex-grow: 1;
@@ -164,12 +167,46 @@ section#countriesSection div.countryCard > div.countryText{
 
     display: flex;
     flex-direction: column;
-    gap:12px;
-    /* box-sizing: content-box; */
+    gap: 12px;
 }
 
-section#countriesSection div.countryCard > div.countryText > h2{
+section#countriesSection div.countryCard>div.countryText .btnSeeMoreDetails {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: transparent;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+}
+
+section#countriesSection div.countryCard>div.countryText>h2 {
     font-size: 18px;
     font-weight: bolder;
-    word-break:keep-all;
+    word-break: keep-all;
+}
+
+button.btnBack span{
+    font-weight: bolder;
+    margin-right: 4px;
+}
+
+article#articleDetails #content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article#articleDetails #firstContent h4 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+
+
+#borderCountries p {
+    word-break: break-all;
 }

@@ -1,79 +1,71 @@
 @media (min-width: 600px) {
 
-    header{
+    header {
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    main{
+    main {
         margin-top: 80px;
         padding: 0 40px 10px;
     }
 
-    div#search{
+    div#search {
         justify-content: space-between;
         align-items: center;
         gap: 10px;
     }
 
-    #searchAndInput{
+    #searchAndInput {
         flex-shrink: 1;
         width: 475px;
         height: 60px;
     }
 
-    div#search select{
-        width: 200px;
+    div#search select {
         height: 60px;
     }
 
-    article#articleDetails{
+    article#articleDetails {
         padding: 0 40px 10px;
     }
 
-    article#articleDetails  #imagem{
+    article#articleDetails #imagem {
         width: 560px;
         height: 400px;
         box-sizing: border-box;
     }
 
-    article#articleDetails  #flagDetails{
+    article#articleDetails #flagDetails {
         width: 560px;
         height: 400px;
     }
 
-    article#articleDetails #content{
-        display: flex;
+    article#articleDetails #content {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 120px;
+        gap: 100px;
     }
 
-    article#articleDetails #allContent{
+    article#articleDetails #allContent {
         display: flex;
         flex-wrap: wrap;
     }
 
-    article#articleDetails #firstContent,article#articleDetails #secondContent{
+    article#articleDetails #firstContent,
+    article#articleDetails #secondContent {
         width: 50%;
     }
 
-    article#articleDetails #borderCountries{
+    article#articleDetails #borderCountries {
         width: 100%;
         margin: auto;
     }
 
-    article#articleDetails #firstContent h4{
-        font-size: 20px;
-        font-weight: bolder;
-        margin-bottom: 40px;
-    }
-
-    article#articleDetails p{
+    article#articleDetails p {
         line-height: 30px;
     }
 
-    article#articleDetails #secondContent{
-        padding: 60px 0px;
+    article#articleDetails #secondContent {
+        padding: 64px 0px;
     }
 }

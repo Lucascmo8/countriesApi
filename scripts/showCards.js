@@ -10,22 +10,17 @@ async function shownCardsWithCountries(countries){
         </div>
         <div class="countryText\">    
             <h2>${country.name}</h2>
-            <p><strong>Population:</strong> ${country.population}</p>
+            <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
             <p><strong>Region:</strong> ${country.region}</p>
             <p><strong>Capital:</strong> ${country.capital}</p>
-            <button class="teste" data-botao="${country.name}">See more Details</button>
+            <button class="btnSeeMoreDetails" data-botao="${country.name}">See more Details</button>
         </div>
     </div>`);
-    // alerta()
 
     testando = document.querySelectorAll("[data-botao]");
     await testando.forEach(botao => botao.addEventListener("click",function(){
         showMore(botao.dataset.botao)
     }))
 };
-
-// function showMore(pais){
-//     countriesSection.innerHTML= `${pais}`
-// }
 
 export {shownCardsWithCountries,countriesSection}

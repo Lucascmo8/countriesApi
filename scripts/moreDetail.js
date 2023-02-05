@@ -1,22 +1,29 @@
-import { main } from "./darkMode.js"
-import { countries } from "./conectApi.js"
-import { articleDetails } from "./darkMode.js"
+import {
+    main
+} from "./darkMode.js"
+import {
+    countries
+} from "./conectApi.js"
+import {
+    articleDetails
+} from "./darkMode.js"
 
-// let articleDetails = document.getElementById("articleDetails")
-
-function showMore(pais){
+let buttonBack = []
+async function showMore(pais) {
     main.style.display = "none"
+    articleDetails.style.display = "flex"
     let details = countries.filter(country => country.name == pais)
     let detailsBorder = details[0].borders
-    if(detailsBorder == undefined){
+    if (detailsBorder == undefined) {
         detailsBorder = `None`
-    }else{
-        detailsBorder = details[0].borders.join(",")
+    } else {
+        let changeForNames = detailsBorder.map(sigla => sigla = countries.filter(country => country.alpha3Code == sigla)[0].name)
+        detailsBorder = changeForNames.join(", ")
     }
-    console.log(details)
+    articleDetails.innerHTML = ``
     articleDetails.innerHTML = `
-    <div>
-            <button>Back</button>
+         <div>
+            <button class="btnBack" data-btnBack><span>< </span>Back</button>
         </div>
         <div id="content">
             <div id="imagem">
@@ -26,7 +33,7 @@ function showMore(pais){
                 <div id="firstContent">
                     <h4>${details[0].name}</h4>
                     <p><strong>Native Name: </strong>${details[0].nativeName}</p>
-                    <p><strong>Population: </strong>${details[0].population}</p>
+                    <p><strong>Population: </strong>${details[0].population.toLocaleString()}</p>
                     <p><strong>Region: </strong>${details[0].region}</p>
                     <p><strong>Sub Region: </strong>${details[0].subregion}</p>
                     <p><strong>Capital: </strong>${details[0].capital}</p>
@@ -41,7 +48,17 @@ function showMore(pais){
                 </div>
             </div>
         </div>
-    `
+    `;
+    buttonBack = await document.querySelectorAll("[data-BtnBack]")
+
+    await buttonBack.forEach(btn => btn.addEventListener("click", function () {
+        articleDetails.style.display = "none"
+        main.style.display = "block"
+    }))
 }
 
-export {showMore,articleDetails}
+
+export {
+    showMore,
+    articleDetails
+}

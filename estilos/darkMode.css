@@ -54,3 +54,12 @@ section#countriesSection.darkMode div.countryCard{
 #articleDetails.darkMode, #articleDetails.darkMode button {
     color: #fff;
 }
+
+#articleDetails.darkMode button{
+    background-color: #2b3945;
+}
+
+main.darkMode section#countriesSection div.countryCard > div.countryText .btnSeeMoreDetails{
+    border: 1px solid #fff;
+    color: #fff;
+}

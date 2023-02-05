@@ -1,41 +1,59 @@
 @media (max-width: 600px) {
 
-    header{
+    /* Start header */
+    header {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    header h1{
+
+    header h1 {
         font-size: 18px;
     }
 
-    main{
+    /* End header */
+
+    /* main */
+    main {
         margin-top: 70px;
         padding: 0 20px 10px;
     }
 
-    div#search{
+
+    div#search {
         flex-direction: column;
         gap: 28px;
     }
 
-    div#search select{
-        width: 200px;
-    }
-
-    article#articleDetails{
-        flex-direction: column;
+    article#articleDetails {
         padding: 0 20px 10px;
     }
 
-    article#articleDetails  #imagem{
+    article#articleDetails #imagem {
         width: 100%;
         height: 240px;
         flex-shrink: 2;
     }
 
-    article#articleDetails  #flagDetails{
+    article#articleDetails #flagDetails {
         width: 100%;
         height: 240px;
+    }
+
+    article#articleDetails #content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    article#articleDetails #secondContent {
+        margin-top: 64px;
+    }
+
+    article#articleDetails p {
+        line-height: 40px;
+    }
+
+    article#articleDetails #allContent {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
