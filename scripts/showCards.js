@@ -5,7 +5,7 @@ async function shownCardsWithCountries(countries){
     countriesSection.innerHTML = ``
     await countries.map(country => countriesSection.innerHTML += `
     <div class="countryCard">
-        <div class="CountryImg" id="${country.name}Flag">
+        <div class="CountryImg" id="${country.name}FlagSpace">
             <img src="${country.flag}" alt="${country.name} flag" id="${country.name}Flag">
         </div>
         <div class="countryText\">    
