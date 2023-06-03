@@ -20,4 +20,4 @@ Link: https://lucascmo8.github.io/countriesApi/index.html
 
 <h2>Sobre o Projeto<h2>
 
-<p>Desafio retirado do <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>, feito para mentoria do <a href="https://www.linkedin.com/in/pedromarins/" target="_blank" rel="noopener noreferrer">Pedro Marins</a></p>
+<p>Desafio retirado do <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank" rel="noopener noreferrer">Frontend Mentor</a></p>
